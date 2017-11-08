@@ -1,0 +1,16 @@
+{
+  "name": "vue-sample",
+  "version": "1.0.0",
+  "description": "vue samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "sample",
+    "webpack"
+  ],
+  "author": "eddy",
+  "license": "MIT"
+}
