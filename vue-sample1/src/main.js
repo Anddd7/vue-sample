@@ -8,8 +8,8 @@ import App from './App.vue'
 //  引入路由配置
 import router from './config/router'
 //  引入api
-//  import api from './config/api'
-//  Vue.prototype.$api = api
+import cnodeAPI from './config/cnode-api'
+Vue.prototype.$cnodeAPI = cnodeAPI
 
 Vue.config.productionTip = false
 

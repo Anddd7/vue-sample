@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="logo">Nodejs 中国社区 Api Test</h1>
+    <h1 class="logo">Vue Sample</h1>
     <ul class="list">
       <li v-for="item in lists" v-text="item.title"></li>
     </ul>
@@ -8,18 +8,25 @@
 </template>
 
 <script>
-  //  为这个页面的组件设置data节点
-  export default {
-    data() {
-      return {
-        lists: [{
-          id: 1,
-          title: 'test title 1'
-        }, {
-          id: 2,
-          title: 'test title 2'
-        }]
-      }
+//  为这个页面的组件设置data节点
+export default {
+  data() {
+    return {
+      lists: []
+    };
+  },
+  created() {
+    this.getData();
+  },
+  methods: {
+    getData: function(params) {
+      this.$cnodeAPI.get(
+        "topics",
+        params ? params : {},
+        data => (this.lists = data.data),
+        error => console.log(error.statusText)
+      );
     }
   }
+};
 </script>
