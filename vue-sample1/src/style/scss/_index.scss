@@ -1,0 +1,14 @@
+.logo {color: red;}
+.list {
+  line-height: 2;
+  li {border-bottom: 1px solid #ddd;}
+}
+
+#app {
+   font-family: $primary-font-fimily;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-align: center;
+   color: $color1;
+   margin-top: 60px;
+ }
