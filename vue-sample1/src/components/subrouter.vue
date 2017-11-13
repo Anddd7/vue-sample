@@ -1,6 +1,5 @@
 <template>
-<div>
-    <div class="logo">Sub Router</div>
+  <div>
     <router-view></router-view>
-</div>
+  </div>
 </template>

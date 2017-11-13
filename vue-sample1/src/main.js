@@ -8,8 +8,15 @@ import App from './App.vue'
 //  引入路由配置
 import router from './config/router'
 //  引入api
-import cnodeAPI from './config/cnode-api'
+import cnodeAPI from './api/cnode_api'
 Vue.prototype.$cnodeAPI = cnodeAPI
+import utils from './utils/index'
+Vue.prototype.$utils = utils
+//引入element
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 

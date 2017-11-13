@@ -5,14 +5,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 //  引用路由页面
-import index from '../pages/index.vue'
-import content from '../pages/content.vue'
+import index from '@/pages/index.vue'
+import content from '@/pages/content.vue'
 //  引用子路由组件
-import Frame from '../frame/subrouter.vue'
+import Frame from '@/components/subrouter.vue'
 //  引用子路由页面
-import userIndex from '../pages/user/index.vue'
-import userInfo from '../pages/user/info.vue'
-import userLove from '../pages/user/love.vue'
+import userIndex from '@/pages/user/index.vue'
+import userInfo from '@/pages/user/info.vue'
+import userLove from '@/pages/user/love.vue'
 
 //  使用路由
 Vue.use(VueRouter)
@@ -22,7 +22,7 @@ export default new VueRouter({
     path: '/',
     component: index
   }, {
-    path: '/content',
+    path: '/content/:id',
     component: content
   }, {
     path: '/user',
