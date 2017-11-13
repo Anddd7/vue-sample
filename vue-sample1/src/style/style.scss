@@ -28,3 +28,29 @@ body {
     color: cornflowerblue;
   }
 }
+
+.content {
+  .floatBtn {
+    position: fixed;
+    position: fixed;
+    right: 30px;
+    top: 50%;
+  }
+  .tags {
+    font-weight: bold;
+  }
+  img {
+    max-width: 100%;
+  }
+  .replies li {
+    padding: 10px;
+    margin: 20px 0;
+    display: block;
+    border-color: gray;
+    border-width: 1px;
+    border-style: dashed;
+    .el-row {
+      border-bottom: 1px solid gray;
+    }
+  }
+}

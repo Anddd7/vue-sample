@@ -23,7 +23,7 @@
       }
     },
     created() {
-      this.getData();
+      this.getData()
     },
     methods: {
       getData: function (params) {
@@ -42,8 +42,11 @@
         return this.$utils.goodTime(value)
       },
       rowClick: function (row, event, column) {
-        this.$router.push({ path: '/content/' + row.id })
+        this.$router.push({
+          path: '/content/' + row.id
+        })
       }
     }
   }
+
 </script>
