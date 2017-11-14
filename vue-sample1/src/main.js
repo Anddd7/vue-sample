@@ -15,6 +15,9 @@ Vue.prototype.$utils = utils
 //引入element
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+//引入fonticon
+import '../static/iconfont/iconfont.css'
+
 
 Vue.use(ElementUI)
 

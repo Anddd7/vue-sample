@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <myHeader></myHeader>
-    <router-view keep-alive transition transition-mode="out-in ">
+    <router-view class="mainView" keep-alive transition transition-mode="out-in">
     </router-view>
     <myFooter></myFooter>
   </div>

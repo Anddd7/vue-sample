@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.colorful-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.header {
+  background-color: darkcyan;
+  display: flex;
+  .logo {
+    margin: 0 0 5px 0;
+  }
+}
+
+.mainView {
+  margin: 5px;
+  padding: 10px;
+  border-color: gray;
+  border-style: dashed;
+}
+
+.articleList {
+  .icon {
+    font-size: 25px;
+    color: cornflowerblue;
+  }
+}

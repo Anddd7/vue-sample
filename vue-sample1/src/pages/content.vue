@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="content">
+    <div class="content" v-loading="loading">
       <h2 v-text="dat.title"></h2>
       <p>作者：{{dat.author.loginname}}　　发表于：{{$utils.goodTime(dat.create_at)}}</p>
       <hr>
@@ -21,7 +21,8 @@
     data() {
       return {
         id: this.$route.params.id,
-        dat: {}
+        dat: {},
+        loading: false
       }
     },
     created() {
@@ -29,8 +30,10 @@
     },
     methods: {
       getData() {
+        loading = true;
         this.$cnodeAPI.get('topic/' + this.id, null, r => {
           this.dat = r.data
+          loading = false
         })
       }
     }
