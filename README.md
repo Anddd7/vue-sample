@@ -1,14 +1,17 @@
 # Time is RUNNING 
-一个 TODO List App ,多端共用的记录你的工作/项目/生活. 
+
+[![Build Status](https://travis-ci.org/Anddd7/vue-sample.svg?branch=master)](https://travis-ci.org/Anddd7/vue-sample)
+
+一个 TODO List, 作为 Vue 的Sample和脚手架项目 
 
 ### todolist-web-app
 前端WebApp部分代码
-
 - Vue
 - ElementUI
 
+### 20180515
+- 合并原vue-sample和todo-list-app
 
-# Record
 ### 20180228
 ![img](docs/20180228-1.png)
 - 权限改造
