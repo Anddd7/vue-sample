@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '8'
+script:
+- npm run build
+after_success:
+# - node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info --COVERALLS_SERVICE_NAME="travis-pro" --COVERALLS_REPO_TOKEN="${COVERALLS_TOKEN}"
+env:
+  global:
+    secure: ny8VnNnRQCHEGw2Je4xJZYCCcxVfkPIFe/oQdJ6/xlCCH/S7l9XM1fneCf29l1BmEWnlGifKOucJeGU9tW1pvMBg353i8A9viennQNYyqq7q1JrWa0u8abFdq6LkuVOAS6dWdflZldBIdJQL/uvQEIJzQM3AqWmY2kIWJLo3FuzZ7KtfrIdf/+8TgGOEYKx9jjynIpok/kT+QY1Pz60kF1slu1vq0sdqdFvWSEU5e2UU0c3DLlYsg6V8otYzE/GBQ5A72hLMadBlbzPSLDe+zmthdRrZvaHmianQWxB85PREXqGKZglXq2jP8Q8TKlPPmljV0d0xq6WmdqzwFqeVglXuUSbtIkJxRkNvDrAI2tc1OALm/Ru6nUO2xxhuwOxV96FPN2et4He9HJN1omKvlkyNoW3zz+AGe+YCGR/et/+muOTc8DCeIyVYKCiGu4SdjkaiWFnonBivDupQ08P5huqZfZnRjA5SwDbQzX7O+PyhyuG89Z9RDKDyyOBcEvgEkL5eyVrdbyKUeUnUhT12Jx6Jz9gbpPSx7ZHOKsVO+NHbJF+LG0j6LpwVUQ0d0ZihPEwcZ/3za6nrOGLahka90pnlhHoxAOdNZb4920R7YQ/Tw0h5UpS5EYee5wa64fMKxZb/I7So5p/zj6+yE7ev4JZeZ2rQnY4q5CQ2xkdZUeI=
